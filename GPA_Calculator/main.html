@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+
+    <style>
+
+        h1{
+            font-family:monospace;
+            background-color:chocolate;
+            width:fit-content;
+            padding:10px;
+            border-radius: 20px;
+            margin: auto;
+        }
+
+        select{
+            padding:5px;
+            border:none;
+            outline: none;
+            padding: 7px;
+            border-radius: 20px;
+            width: 70px;
+            text-align: center;
+        }
+
+        button{
+            display: block;
+            width:fit-content;
+            border:none;
+            padding:15px;
+            background-color: darkgoldenrod;
+            border-radius: 20px;
+            margin: auto;
+            width:50%;
+        }
+        button:hover{
+            opacity: 0.8;
+            transition: 0.3s;
+        }
+
+        th,td{
+            border:none;
+            border-radius: 15px;
+            padding:10px;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+
+
+        th{
+            background-color: darkgoldenrod;
+            padding:15px;
+            
+        }
+
+        td{
+            background-color: cadetblue;
+        }
+
+        select{
+            background-color: transparent;
+            font-size: 15px;
+        }
+
+        #grade-box{
+            background-color: darksalmon;
+        }
+
+    </style>
+
+</head>
+
+<body style="background-color:wheat;">
+    <h1>GPA Calculator</h1>
+
+    <div style="margin:auto;width:fit-content;margin-top:20px;">
+        <table>
+            <tr>
+                <th>COURSE CODE</th>
+                <th>COURSE TITLE</th>
+                <th>GRADE</th>
+            </tr>
+
+            <tr>
+                <td>U19MA404</td>
+                <td>Probability and Queuing Theory</td>
+                <td id="grade-box">
+                    <select id="U19MA404">
+                        <option>O</option>
+                        <option>A+</option>
+                        <option>A</option>
+                        <option>B+</option>
+                        <option>B</option>
+                        <option>U</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>U19CS401</td>
+                <td>Operating Systems</td>
+                <td id="grade-box">
+                    <select id="U19CS401">
+                        <option>O</option>
+                        <option>A+</option>
+                        <option>A</option>
+                        <option>B+</option>
+                        <option>B</option>
+                        <option>U</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>U19CS402</td>
+                <td>Design and Analysis of Algorithms</td>
+                <td id="grade-box">
+                    <select id="U19CS402">
+                        <option>O</option>
+                        <option>A+</option>
+                        <option>A</option>
+                        <option>B+</option>
+                        <option>B</option>
+                        <option>U</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>U19CS403</td>
+                <td>Theory of Computation</td>
+                <td id="grade-box">
+                    <select id="U19CS403">
+                        <option>O</option>
+                        <option>A+</option>
+                        <option>A</option>
+                        <option>B+</option>
+                        <option>B</option>
+                        <option>U</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>U19CS404</td>
+                <td>Database Management Systems</td>
+                <td id="grade-box">
+                    <select id="U19CS404">
+                        <option>O</option>
+                        <option>A+</option>
+                        <option>A</option>
+                        <option>B+</option>
+                        <option>B</option>
+                        <option>U</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>U19CS405</td>
+                <td>OOPS & ADS</td>
+                <td id="grade-box">
+                    <select id="U19CS405">
+                        <option>O</option>
+                        <option>A+</option>
+                        <option>A</option>
+                        <option>B+</option>
+                        <option>B</option>
+                        <option>U</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>U19CS406</td>
+                <td>Operating Systems Lab</td>
+                <td id="grade-box">
+                    <select id="U19CS406">
+                        <option>O</option>
+                        <option>A+</option>
+                        <option>A</option>
+                        <option>B+</option>
+                        <option>B</option>
+                        <option>U</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>U19CS407</td>
+                <td>Database Management Systems Lab</td>
+                <td id="grade-box">
+                    <select id="U19CS407">
+                        <option>O</option>
+                        <option>A+</option>
+                        <option>A</option>
+                        <option>B+</option>
+                        <option>B</option>
+                        <option>U</option>
+                    </select>
+                </td>
+            </tr>
+
+        </table>
+
+        <br><br>
+
+        <button id="btn">SUBMIT</button>
+        <br><br>
+        <h1 id="res" style="background-color:darksalmon;padding:20px">GPA : --</h1>
+
+    </div>
+
+    <script src="index.js"></script>
+
+    
+</body>
+</html>

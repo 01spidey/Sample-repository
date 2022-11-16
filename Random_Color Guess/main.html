@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color:wheat;
+            }
+
+            .btn{
+                display:block;
+                border:none;
+                font-size: 20px;
+                border-radius: 20px;
+                padding: 10px;
+                margin: auto;
+                background-color:darkgoldenrod;
+                color:white;
+                opacity: 0.6;
+            }
+
+            .btn:hover{
+                opacity:1;
+                transition: 0.3s;
+            }
+
+            .color{
+                padding:35px;
+                display:inline-block;
+                margin: 10px;
+                border:none;
+                border-radius: 20px;
+            }
+
+            .color:hover{
+                opacity:0.6;
+                transition: 0.3s;
+            }
+
+            .color:focus{
+                opacity:0.6;
+                border: 2px solid black;
+                resize: none;
+            }
+            
+
+        </style>
+    </head>
+
+    <body>
+        <br><br>
+
+        <div style="width:fit-content;margin:auto;">
+            <button id="1" class="color" style="background-color:blue"></button>
+            <button id="2" class="color" style="background-color:maroon"></button>
+            <button id="3" class="color" style="background-color:yellow"></button>
+            <button id="4" class="color" style="background-color:cadetblue"></button>
+            <button id="5" class="color" style="background-color:green"></button>
+            <button id="6" class="color" style="background-color:violet"></button>
+        </div>
+
+        <br><br>
+
+        <button class="btn" id="btn">Submit</button>
+        
+        <br><br>
+        
+        <label style="display:block;width:fit-content;margin:auto;">COLOR</label>
+        
+        <label id="color" style="display:block;width:fit-content;margin:auto;background-color:wheat;padding:10px;border-radius:30px;margin-top:5px;"></label>
+        
+        <br>
+        
+        <label style="display:block;width:fit-content;margin:auto;">SCORE</label>
+        
+        <label id="score" style="display:block;width:fit-content;margin:auto;margin-top:5px;">0 pts</label>
+    
+        <script src="index.js"></script>
+
+    </body>
+
+</html>
