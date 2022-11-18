@@ -85,16 +85,15 @@ val_btn.onclick = function(){
                 }
                 
             }
-
+            
+            if(empty) break;
+            
             if(valid){
                 valid_pc_lst.push(`${i+1}`);  
             }
             else{
                 valid_pc_lst.push(`0`);
             }
-
-            if(empty) break;
-
         }
 
         
